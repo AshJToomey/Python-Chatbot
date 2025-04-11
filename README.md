@@ -76,7 +76,3 @@ Future Improvements
 License
 
 MIT License
-
-⸻
-
-Let me know if you want me to generate a logo or badge set for this too!
