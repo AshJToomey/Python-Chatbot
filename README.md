@@ -1,4 +1,4 @@
-Ashley’s Python Chatbot
+**Ashley’s Python Chatbot**
 
 Welcome to Ashley’s Python Chatbot – a conversational assistant built using Python, Hugging Face Transformers, and NLTK. This chatbot combines simple rule-based logic with a powerful language model to create intelligent and context-aware responses.
 
