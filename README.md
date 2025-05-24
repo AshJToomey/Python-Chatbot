@@ -1,24 +1,75 @@
 # 🤖 Ashley’s Python Chatbot
 
-Welcome to **Ashley’s Python Chatbot** – a conversational assistant built using **Python**, **Hugging Face Transformers**, and **NLTK**. This chatbot blends simple rule-based logic with a powerful pretrained language model to deliver intelligent, context-aware responses in a terminal-based chat environment.
+Ashley’s Python Chatbot is a smart conversational assistant that blends GPT-2 natural language generation with basic small talk handling and synonym support. Now featuring a polished Tkinter-based GUI, this chatbot provides a more interactive and user-friendly experience, right from your desktop.
 
 ---
 
 ## ✨ Features
 
-- 🤖 Pretrained **GPT-2** model for natural language generation
-- 💬 Basic small talk detection (greetings and farewells)
-- 🔁 Synonym expansion using **WordNet**
-- 🧠 Token-based input processing
-- 🚫 Fallback responses for unknown queries
-- 💻 Interactive command-line chat interface
+- 🧠 GPT-2 Powered: Uses Hugging Face Transformers to generate intelligent responses.
+- 💬 Rule-Based Small Talk: Recognizes greetings and farewells.
+- 🔄 Synonym Expansion: WordNet-powered synonym lookup for future expansion.
+- 📜 Conversation History Tracking: Maintains a short memory window to generate more relevant responses.
+-  Tkinter GUI: Intuitive interface for chatting with the bot.
+- 🧪 Fallback Responses: Handles unclear inputs gracefully.
 
----
+## 📸 GUI Preview
 
-## 📽️ Demo
+---------------------------------------------
+| You: Hello                                |
+| Bot: Hello! How can I assist you today?   |
+| You: Tell me something cool               |
+| Bot: Sure! Here's something interesting...|
+---------------------------------------------
 
-Start the chatbot by running the script:
+## 🚀 Getting Started
+✅ Requirements
+Python 3.7+
 
-```bash
-python chatbot.py
+Hugging Face Transformers
+
+NLTK
+
+Tkinter (comes with most Python installations)
+
+Install dependencies with:
+
+pip install transformers nltk
+
+Download NLTK resources:
+
+import nltk
+nltk.download("punkt")
+nltk.download("wordnet")
+
+## ▶️ Running the Chatbot
+To launch the graphical chatbot:
+
+python Ashleys_Python_Chatbot.py
+
+The chatbot will open in a window where you can type and send messages.
+
+## 📁 Project Structure
+
+Ashleys_Python_Chatbot/
+
+├── Ashleys_Python_Chatbot.py     # Main script with chatbot + GUI
+
+├── README.md                     # This file
+
+
+## 🧠 Behind the Scenes
+The chatbot uses GPT-2 via the pipeline("text-generation") method.
+
+A short context window (conversation_history[-5:]) feeds recent dialogue to the model.
+
+Basic greeting and farewell detection is handled using token checks.
+
+Synonym lookup (currently not integrated in generation) uses WordNet and is a hook for future NLP improvements.
+
+## 🔒 License
+MIT License. Free for personal and commercial use.
+
+## 🙌 Contributing
+Ideas, suggestions, and pull requests are welcome. Feel free to fork this project and make it your own!
 
